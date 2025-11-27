@@ -272,3 +272,26 @@ body {
     gap: 0.5rem;
   }
 }
+
+/* Container scroll behavior */
+.amplify-storage-browser__data-table {
+  max-height: 45vh;  
+  display: block;  
+  overflow-x: hidden;  /* hide horizontal scroll */
+  overflow-y: auto;    /* vertical scroll only */
+  width: 100%;         /* make sure table fits container */
+  table-layout: fixed; /* ensures cells respect max-width */
+}
+
+/* Table cells */
+.amplify-storage-browser__table-text-data-cell-text {
+  display: block;
+  white-space: normal;       /* allow wrapping */
+  word-break: break-word;    /* break long words */
+  max-width: 100%;           /* never exceed container */
+}
+
+/* Optional: Remove page scroll completely */
+html, body, #root {
+  overflow: hidden;
+}
