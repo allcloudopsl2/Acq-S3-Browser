@@ -13,7 +13,7 @@ const rootfolderName = process.env.ROOT_FOLDER_NAME?.trim();
 
 //const bucketName = 'aec-imserv-uat-bkt';
 //const bucketRegion = 'us-east-1';
-//const rootfolderName = "IMServUAT";
+//const rootfolderName = "IMServ";
 
 if (!bucketName || !bucketRegion || !rootfolderName) {
   throw new Error("Missing required environment variables: CUSTOM_BUCKET_NAME or CUSTOM_BUCKET_REGION or ROOT_FOLDER_NAME");
