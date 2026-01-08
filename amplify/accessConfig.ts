@@ -6,7 +6,7 @@ export interface AccessRule {
 }
 
 export const accessConfig: Record<string, AccessRule[]> = {
-  // Full CRUD access to NewDay folder and subfolders
+  // Full CRUD access to IMServUAT folder and subfolders
   Administrator: [
     // {
     //   // Grant list permission on the root to see folders
@@ -14,7 +14,7 @@ export const accessConfig: Record<string, AccessRule[]> = {
     //   permissions: ["list"],
     // },
     {
-      path: "NewDay/*",
+      path: "IMServUAT/*",
       permissions: ["get", "list", "write", "delete"],
     },
   ],
@@ -27,7 +27,7 @@ export const accessConfig: Record<string, AccessRule[]> = {
     //   permissions: ["list"],
     // },
     {
-      path: "NewDay/*",
+      path: "IMServUAT/*",
       permissions: ["get", "list", "write"],
     },
   ],
@@ -35,11 +35,11 @@ export const accessConfig: Record<string, AccessRule[]> = {
   // Limited: RW access to 2 subfolders + view root-level files.
   LimitedContributor: [
     {
-      path: "NewDay/PreProcAutoupload/*",
+      path: "IMServUAT/PreProcAutoupload/*",
       permissions: ["get", "list", "write"],
     },
     {
-      path: "NewDay/DataExtract/*",
+      path: "IMServUAT/DataExtract/*",
       permissions: ["get", "list", "write"],
     },
   ],
